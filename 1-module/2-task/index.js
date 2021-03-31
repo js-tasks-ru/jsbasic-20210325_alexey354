@@ -10,7 +10,11 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  // ваш код...
+  if(!name || name.indexOf(' ') > 0 || !name.trim() || name.trim().length< 4) {
+    return false;
+  }
+
+  return true;
 }
 
 function sayHello() {
